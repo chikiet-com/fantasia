@@ -1,5 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/ostrich-sans-2');
+html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0;
+  font-family: 'Ostrich Sans', sans-serif;
+  font-family: 'Ostrich Sans Inline', sans-serif;
+  font-family: 'Ostrich Sans Dashed', sans-serif;
+  font-family: 'Ostrich Sans Rounded', sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ostrich Sans', sans-serif;
+  font-family: 'Ostrich Sans Inline', sans-serif;
+  font-family: 'Ostrich Sans Dashed', sans-serif;
+  font-family: 'Ostrich Sans Rounded', sans-serif;
+}
