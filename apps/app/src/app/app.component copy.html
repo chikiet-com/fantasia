@@ -1,0 +1,195 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="over">
+    <div class="flex flex-col space-y-3 min-w-[300px] overflow-auto h-full">
+      <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap">Home</a>
+      <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Road
+        map</a>
+      <a href="#section2" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">About
+        Us</a>
+      <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Dev
+        Team</a>
+      <a href="#section4" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Contact</a>
+      <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
+        Paper</a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content w-full h-full">
+    <div class="flex flex-col w-full h-full relative justify-center">
+      <div class="w-full h-full">
+        <div class="fixed z-10 w-full top-0 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
+          <div
+            class="m-auto md:w-full sm:w-[576px] md:pt-2 items-center uppercase flex flex-row text-white space-x-3 md:justify-center justify-between text-2xl w-full cursor-pointer">
+            <button type="button" mat-button (click)="drawer.toggle()">
+              <span class="material-icons md:hidden xs:block">
+                menu
+              </span>
+            </button>
+            <img src="../assets/logo_head.svg" class="md:w-[200px] w-[100px] text-center" alt="" />
+            <div class="md:hidden"></div>
+            <div class="hidden md:flex flex-row space-x-3 items-center">
+              <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Home</a>
+              <div>|</div>
+              <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Road
+                map</a>
+              <div>|</div>
+              <a href="#section2" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">About
+                Us</a>
+              <div>|</div>
+              <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Dev
+                Team</a>
+              <div>|</div>
+              <a href="#section4"
+                class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Contact</a>
+              <div>|</div>
+              <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
+                Paper</a>
+            </div>
+          </div>
+        </div>
+        <div class="relative m-auto mt-8 md:w-full sm:w-[576px] flex flex-row text-white md:space-x-3 text-2xl w-full">
+          <video playsinline autoplay loop muted>
+            <source src="../assets/shutterstock-4k_1072092397.webm" type="video/webm; codecs=vp9">
+            <source src="../assets/shutterstock-4k_1072092397.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
+            <source src="../assets/shutterstock-4k_1072092397.webm" type="video/webm">
+            <source src="../assets/shutterstock-4k_1072092397.mp4" type="video/mp4" type="video/mp4">
+          </video>
+          <!-- <div class="absolute top-0 left-0 w-full h-full">
+            <div class="relative w-full h-full">
+
+            </div>
+          </div> -->
+          <div class="absolute left-1/2 top-1/3 flex flex-col mt-12 p-2 md:space-y-6 md:mt-16 md:w-1/2 w-full justify-center"
+            style="transform: translate(-50%,-50%);">
+            <div class="flex flex-col space-y-[40px]">
+            <div class="flex flex-row space-x-3 items-center md:justify-start justify-center">
+              <img src="../assets/logo_only.svg" class="md:w-[50px] w-[30px]" />
+              <span class="text-[72px]">FANTASIA</span><span class="text-[72px]">NFT</span>
+            </div>
+            <div class="md:text-[48px] text-xs">WELCOME TO F-WORD</div>
+            <div class="text-xs md:text-xl">
+              The Fantasia Foundation launches an incentive program focused on
+              accelerating the adoption and growth of its novel Subnets, the
+              premiere scaling solution for Web3 dApps.
+            </div>
+            <div>
+              <span class="bg-slate-200 rounded-lg p-2 text-blue-400 text-xs md:text-xl">Learn More
+              </span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="../assets/banner_bg.jpg" alt="" /> -->
+      <!-- <img src="../assets/bg.jpg" alt=""> -->
+      <div class="md:space-y-10 space-y-4 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
+        <section id="section1">
+          <div class="m-auto md:w-full sm:w-[576px]">
+            <div
+              class="w-full text-white text-center md:text-5xl p-4  uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              road map
+            </div>
+          </div>
+          <img src="../assets/Road_map_1011.jpg" class="w-full" />
+        </section>
+        <hr />
+        <section id="section2">
+          <div class="m-auto md:w-full sm:w-[576px]">
+            <div
+              class="w-full text-white text-center md:text-5xl p-4 uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              trust - safe -speed
+            </div>
+            <div class="flex flex-col space-y-10 justify-center relative items-center mt-4 text-white p-4">
+              <div class="md:text-2xl text-xs">
+                In our second edition of the Guide to Trust & Safety, we tackle the
+                complex challenge of measuring the trust and safety of your online
+                platform. From ensuring visibility to ensuring policy enforcement,
+                we make it simple to implement valuable metrics.
+              </div>
+              <div class="md:text-lg text-xs">
+                In the first part of our Guide to Trust & Safety, we share the four
+                functions needed to build a trust and safety team. However, building
+                a team isn’t enough. Trust & Safety must be managed, and a key
+                component of that is evaluating its effectiveness and ensuring
+                constant improvement. There are many factors to consider when
+                measuring a Trust & Safety operation, ranging from hard metrics of
+                enforcement rates, speed to action, and threat coverage, to the
+                perception of your platform’s work, its fairness, and sincerity.
+                Here we take you through the key questions that you should use to
+                assess your team and build its priorities.
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section id="section3">
+          <div class="m-auto md:w-full sm:w-[576px]">
+            <div
+              class="w-full text-white text-center md:text-5xl p-4 uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              dev team
+            </div>
+            <div class="grid md:grid-cols-4 grid-cols-2 gap-4 p-8">
+              <div class="flex flex-col space-y-3 text-white items-center">
+                <img src="../assets/logo_only.svg" class="w-[100px] h-[100px]" />
+                <span class="md:text-xl">Dev Name 1</span>
+                <span class="md:text-2xl font-bold">Block Chain DEV</span>
+              </div>
+              <div class="flex flex-col space-y-3 text-white items-center">
+                <img src="../assets/logo_only.svg" class="w-[100px] h-[100px]" />
+                <span class="md:text-xl">Dev Name 1</span>
+                <span class="md:text-2xl font-bold">Block Chain DEV</span>
+              </div>
+              <div class="flex flex-col space-y-3 text-white items-center">
+                <img src="../assets/logo_only.svg" class="w-[100px] h-[100px]" />
+                <span class="md:text-xl">Dev Name 1</span>
+                <span class="md:text-2xl font-bold">Block Chain DEV</span>
+              </div>
+              <div class="flex flex-col space-y-3 text-white items-center">
+                <img src="../assets/logo_only.svg" class="w-[100px] h-[100px]" />
+                <span class="md:text-xl">Dev Name 1</span>
+                <span class="md:text-2xl font-bold">Block Chain DEV</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section id="section4" class="pb-48 px-8">
+          <div class="m-auto md:w-full sm:w-[576px]">
+            <div class="flex md:flex-row flex-col md:space-x-4 space-y-10">
+              <div class="flex flex-col space-y-6 md:w-2/3 md:items-baseline justify-center items-center">
+                <img src="../assets/logo_only.svg" class="md:w-[70px] w-[40px]" />
+                <div class="text-white text-xl">Managed by Fantasia Foudation</div>
+                <div class="flex flex-row space-x-4">
+                  <img src="../assets/social-01.svg" class="w-[40px]" />
+                  <img src="../assets/social-02.svg" class="w-[40px]" />
+                  <img src="../assets/social-03.svg" class="w-[40px]" />
+                  <img src="../assets/social-04.svg" class="w-[40px]" />
+                  <img src="../assets/social-05.svg" class="w-[40px]" />
+                  <img src="../assets/social-06.svg" class="w-[40px]" />
+                </div>
+                <div class="text-white">
+                  @2022 Fantasia foundation. All rights reserved
+                </div>
+              </div>
+              <div class="md:w-1/3 text-white">
+                <div class="grid grid-cols-2 gap-8">
+                  <div class="md:text-xl font-bold">FANTASIA</div>
+                  <div class="md:text-xl font-bold">GET CONNECTED</div>
+                  <div class="md:text-xl">Grants</div>
+                  <div class="md:text-xl">Ecosystem</div>
+                  <div class="md:text-xl">Break Solana</div>
+                  <div class="md:text-xl">Blog</div>
+                  <div class="md:text-xl">Media Kit</div>
+                  <div class="md:text-xl">Newsleter</div>
+                  <div class="md:text-xl">Careers</div>
+                  <div class="md:text-xl">Disclaimer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</mat-drawer-container>

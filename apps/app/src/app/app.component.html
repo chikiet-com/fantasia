@@ -1,32 +1,57 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
-    <div class="flex flex-col space-y-3 min-w-[300px] overflow-auto h-full">
-      <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap">Home</a>
-      <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Road
+    <div class="flex flex-col space-y-3 min-w-[300px] overflow-auto h-full ">
+      <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap" (click)="drawer.close()">Home</a>
+      <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">Road
         map</a>
-      <a href="#section2" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">About
+      <a href="#section2" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">About
         Us</a>
-      <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Dev
+      <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">Dev
         Team</a>
-      <a href="#section4" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Contact</a>
-      <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
+      <a href="#section4" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">Contact</a>
+      <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">White
         Paper</a>
+      <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">
+      <div class="flex flex-row space-x-4">
+        <span> Add To MetaMask</span>
+        <div class="w-[30px]">
+          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 318.6 318.6">
+            <style>
+              .st1,.st6{fill:#e4761b;stroke:#e4761b;stroke-linecap:round;stroke-linejoin:round}.st6{fill:#f6851b;stroke:#f6851b}
+            </style>
+            <path fill="#e2761b" stroke="#e2761b" stroke-linecap="round" stroke-linejoin="round" d="m274.1 35.5-99.5 73.9L193 65.8z"/>
+            <path d="m44.4 35.5 98.7 74.6-17.5-44.3zm193.9 171.3-26.5 40.6 56.7 15.6 16.3-55.3zm-204.4.9L50.1 263l56.7-15.6-26.5-40.6z" class="st1"/>
+            <path d="m103.6 138.2-15.8 23.9 56.3 2.5-2-60.5zm111.3 0-39-34.8-1.3 61.2 56.2-2.5zM106.8 247.4l33.8-16.5-29.2-22.8zm71.1-16.5 33.9 16.5-4.7-39.3z" class="st1"/>
+            <path fill="#d7c1b3" stroke="#d7c1b3" stroke-linecap="round" stroke-linejoin="round" d="m211.8 247.4-33.9-16.5 2.7 22.1-.3 9.3zm-105 0 31.5 14.9-.2-9.3 2.5-22.1z"/>
+            <path fill="#233447" stroke="#233447" stroke-linecap="round" stroke-linejoin="round" d="m138.8 193.5-28.2-8.3 19.9-9.1zm40.9 0 8.3-17.4 20 9.1z"/>
+            <path fill="#cd6116" stroke="#cd6116" stroke-linecap="round" stroke-linejoin="round" d="m106.8 247.4 4.8-40.6-31.3.9zM207 206.8l4.8 40.6 26.5-39.7zm23.8-44.7-56.2 2.5 5.2 28.9 8.3-17.4 20 9.1zm-120.2 23.1 20-9.1 8.2 17.4 5.3-28.9-56.3-2.5z"/>
+            <path fill="#e4751f" stroke="#e4751f" stroke-linecap="round" stroke-linejoin="round" d="m87.8 162.1 23.6 46-.8-22.9zm120.3 23.1-1 22.9 23.7-46zm-64-20.6-5.3 28.9 6.6 34.1 1.5-44.9zm30.5 0-2.7 18 1.2 45 6.7-34.1z"/>
+            <path d="m179.8 193.5-6.7 34.1 4.8 3.3 29.2-22.8 1-22.9zm-69.2-8.3.8 22.9 29.2 22.8 4.8-3.3-6.6-34.1z" class="st6"/>
+            <path fill="#c0ad9e" stroke="#c0ad9e" stroke-linecap="round" stroke-linejoin="round" d="m180.3 262.3.3-9.3-2.5-2.2h-37.7l-2.3 2.2.2 9.3-31.5-14.9 11 9 22.3 15.5h38.3l22.4-15.5 11-9z"/>
+            <path fill="#161616" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" d="m177.9 230.9-4.8-3.3h-27.7l-4.8 3.3-2.5 22.1 2.3-2.2h37.7l2.5 2.2z"/>
+            <path fill="#763d16" stroke="#763d16" stroke-linecap="round" stroke-linejoin="round" d="m278.3 114.2 8.5-40.8-12.7-37.9-96.2 71.4 37 31.3 52.3 15.3 11.6-13.5-5-3.6 8-7.3-6.2-4.8 8-6.1zM31.8 73.4l8.5 40.8-5.4 4 8 6.1-6.1 4.8 8 7.3-5 3.6 11.5 13.5 52.3-15.3 37-31.3-96.2-71.4z"/>
+            <path d="m267.2 153.5-52.3-15.3 15.9 23.9-23.7 46 31.2-.4h46.5zm-163.6-15.3-52.3 15.3-17.4 54.2h46.4l31.1.4-23.6-46zm71 26.4 3.3-57.7 15.2-41.1h-67.5l15 41.1 3.5 57.7 1.2 18.2.1 44.8h27.7l.2-44.8z" class="st6"/>
+          </svg>
+        </div>
+      </div>
+
+      </a>
     </div>
   </mat-drawer>
 
   <div class="example-sidenav-content w-full h-full">
     <div class="flex flex-col w-full h-full relative justify-center">
       <div class="w-full h-full">
-        <div class="fixed z-10 w-full top-0 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
+        <div class="fixed z-50 w-full top-0 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
           <div
-            class="m-auto md:w-full sm:w-[576px] md:pt-2 items-center uppercase flex flex-row text-white space-x-3 md:justify-center justify-between text-2xl w-full cursor-pointer">
+            class="m-auto h-[80px] md:w-full sm:w-[576px] md:pt-2 items-center uppercase flex flex-row text-white space-x-3 md:justify-center justify-between text-2xl w-full cursor-pointer">
+            <div class="md:hidden"></div>
+            <img src="../assets/logo_head.svg" class="md:w-[200px] h-[50px] text-center" alt="" />
             <button type="button" mat-button (click)="drawer.toggle()">
               <span class="material-icons md:hidden xs:block">
                 menu
               </span>
             </button>
-            <img src="../assets/logo_head.svg" class="md:w-[200px] w-[100px] text-center" alt="" />
-            <div class="md:hidden"></div>
             <div class="hidden md:flex flex-row space-x-3 items-center">
               <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Home</a>
               <div>|</div>
@@ -44,69 +69,94 @@
               <div>|</div>
               <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
                 Paper</a>
+              <div> |</div>
+              <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" matTooltip="Add To MetaMask">
+                <div class="w-[30px]">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 318.6 318.6">
+                  <style>
+                    .st1,.st6{fill:#e4761b;stroke:#e4761b;stroke-linecap:round;stroke-linejoin:round}.st6{fill:#f6851b;stroke:#f6851b}
+                  </style>
+                  <path fill="#e2761b" stroke="#e2761b" stroke-linecap="round" stroke-linejoin="round" d="m274.1 35.5-99.5 73.9L193 65.8z"/>
+                  <path d="m44.4 35.5 98.7 74.6-17.5-44.3zm193.9 171.3-26.5 40.6 56.7 15.6 16.3-55.3zm-204.4.9L50.1 263l56.7-15.6-26.5-40.6z" class="st1"/>
+                  <path d="m103.6 138.2-15.8 23.9 56.3 2.5-2-60.5zm111.3 0-39-34.8-1.3 61.2 56.2-2.5zM106.8 247.4l33.8-16.5-29.2-22.8zm71.1-16.5 33.9 16.5-4.7-39.3z" class="st1"/>
+                  <path fill="#d7c1b3" stroke="#d7c1b3" stroke-linecap="round" stroke-linejoin="round" d="m211.8 247.4-33.9-16.5 2.7 22.1-.3 9.3zm-105 0 31.5 14.9-.2-9.3 2.5-22.1z"/>
+                  <path fill="#233447" stroke="#233447" stroke-linecap="round" stroke-linejoin="round" d="m138.8 193.5-28.2-8.3 19.9-9.1zm40.9 0 8.3-17.4 20 9.1z"/>
+                  <path fill="#cd6116" stroke="#cd6116" stroke-linecap="round" stroke-linejoin="round" d="m106.8 247.4 4.8-40.6-31.3.9zM207 206.8l4.8 40.6 26.5-39.7zm23.8-44.7-56.2 2.5 5.2 28.9 8.3-17.4 20 9.1zm-120.2 23.1 20-9.1 8.2 17.4 5.3-28.9-56.3-2.5z"/>
+                  <path fill="#e4751f" stroke="#e4751f" stroke-linecap="round" stroke-linejoin="round" d="m87.8 162.1 23.6 46-.8-22.9zm120.3 23.1-1 22.9 23.7-46zm-64-20.6-5.3 28.9 6.6 34.1 1.5-44.9zm30.5 0-2.7 18 1.2 45 6.7-34.1z"/>
+                  <path d="m179.8 193.5-6.7 34.1 4.8 3.3 29.2-22.8 1-22.9zm-69.2-8.3.8 22.9 29.2 22.8 4.8-3.3-6.6-34.1z" class="st6"/>
+                  <path fill="#c0ad9e" stroke="#c0ad9e" stroke-linecap="round" stroke-linejoin="round" d="m180.3 262.3.3-9.3-2.5-2.2h-37.7l-2.3 2.2.2 9.3-31.5-14.9 11 9 22.3 15.5h38.3l22.4-15.5 11-9z"/>
+                  <path fill="#161616" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" d="m177.9 230.9-4.8-3.3h-27.7l-4.8 3.3-2.5 22.1 2.3-2.2h37.7l2.5 2.2z"/>
+                  <path fill="#763d16" stroke="#763d16" stroke-linecap="round" stroke-linejoin="round" d="m278.3 114.2 8.5-40.8-12.7-37.9-96.2 71.4 37 31.3 52.3 15.3 11.6-13.5-5-3.6 8-7.3-6.2-4.8 8-6.1zM31.8 73.4l8.5 40.8-5.4 4 8 6.1-6.1 4.8 8 7.3-5 3.6 11.5 13.5 52.3-15.3 37-31.3-96.2-71.4z"/>
+                  <path d="m267.2 153.5-52.3-15.3 15.9 23.9-23.7 46 31.2-.4h46.5zm-163.6-15.3-52.3 15.3-17.4 54.2h46.4l31.1.4-23.6-46zm71 26.4 3.3-57.7 15.2-41.1h-67.5l15 41.1 3.5 57.7 1.2 18.2.1 44.8h27.7l.2-44.8z" class="st6"/>
+                </svg>
+              </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="relative m-auto mt-8 md:w-full sm:w-[576px] flex flex-row text-white md:space-x-3 text-2xl w-full">
-          <video playsinline autoplay loop muted>
+        <div class="relative m-auto mt-[80px] md:w-full sm:w-[576px] flex flex-row text-white md:space-x-3 text-2xl w-full">
+          <div class="absolute top-0 left-0 w-full h-full">
+          <video playsinline autoplay loop muted class="md:block hidden">
             <source src="../assets/shutterstock-4k_1072092397.webm" type="video/webm; codecs=vp9">
             <source src="../assets/shutterstock-4k_1072092397.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
             <source src="../assets/shutterstock-4k_1072092397.webm" type="video/webm">
             <source src="../assets/shutterstock-4k_1072092397.mp4" type="video/mp4" type="video/mp4">
           </video>
-          <!-- <div class="absolute top-0 left-0 w-full h-full">
-            <div class="relative w-full h-full">
-
-            </div>
-          </div> -->
-          <div class="absolute left-1/2 top-1/3 flex flex-col mt-12 p-2 md:space-y-6 md:mt-16 md:w-1/2 w-full justify-center"
-            style="transform: translate(-50%,-50%);">
-            <div class="flex flex-col space-y-[40px]">
+          <video playsinline autoplay loop muted class="md:hidden">
+            <source src="../assets/videodoc.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
+            <source src="../assets/videodoc.mp4" type="video/mp4" type="video/mp4">
+          </video>
+          </div>
+          <div class="absolute flex flex-col mt-4 p-6 md:px-32 md:space-y-6 md:mt-16 w-full h-full justify-start z-10">
+            <div class="flex flex-col md:space-y-[40px] space-y-4">
             <div class="flex flex-row space-x-3 items-center md:justify-start justify-center">
-              <img src="../assets/logo_only.svg" class="md:w-[50px] w-[30px]" />
-              <span class="text-[72px]">FANTASIA</span><span class="text-[72px]">NFT</span>
+              <img src="../assets/logo_only.svg" class="md:w-[100px] w-[60px]" />
+              <span class="md:text-[100px] text-[60px] text-blue-400">FANTASIA</span><span class="md:text-[130px] text-[60px]">NFT</span>
             </div>
-            <div class="md:text-[48px] text-xs">WELCOME TO F-WORD</div>
-            <div class="text-xs md:text-xl">
+            <div class="md:text-[130px] text-[30px]">WELCOME TO F-WORD</div>
+            <div class="text-xs md:text-2xl text-[16px]">
               The Fantasia Foundation launches an incentive program focused on
               accelerating the adoption and growth of its novel Subnets, the
               premiere scaling solution for Web3 dApps.
             </div>
             <div>
-              <span class="bg-slate-200 rounded-lg p-2 text-blue-400 text-xs md:text-xl">Learn More
+              <span class="bg-slate-200 rounded-lg p-2 text-blue-400 text-xs md:text-4xl">Learn More
               </span>
             </div>
           </div>
           </div>
+        <img src="../assets/bg-video.png" alt="" class="md:block hidden"/>
+        <img src="../assets/bg-video-mobile.png" alt="" class="md:hidden"/>
         </div>
       </div>
-      <!-- <img src="../assets/banner_bg.jpg" alt="" /> -->
+
       <!-- <img src="../assets/bg.jpg" alt=""> -->
-      <div class="md:space-y-10 space-y-4 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
-        <section id="section1">
-          <div class="m-auto md:w-full sm:w-[576px]">
+    <div class="md:space-y-10 space-y-2 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
+        <section id="section1" class="pt-[80px] !-mt-[60px]">
+          <div class="m-auto md:w-full sm:w-[576px] mt-2">
             <div
-              class="w-full text-white text-center md:text-5xl p-4  uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              class="w-full text-white text-center md:text-[4rem] text-[2rem] font-bold p-2 leading-none uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
               road map
             </div>
           </div>
-          <img src="../assets/Road_map_1011.jpg" class="w-full" />
+          <img src="../assets/Road_map_1011.jpg" class="w-full md:block hidden" />
+          <img src="../assets/Road_map_mobile.jpg" class="w-full md:hidden" />
         </section>
-        <hr />
-        <section id="section2">
+<hr />
+        <section id="section2" class="pt-[80px] !-mt-[60px]">
           <div class="m-auto md:w-full sm:w-[576px]">
             <div
-              class="w-full text-white text-center md:text-5xl p-4 uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              class="w-full text-white text-center md:text-[4rem] text-[2rem] font-bold p-2 leading-none bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
               trust - safe -speed
             </div>
-            <div class="flex flex-col space-y-10 justify-center relative items-center mt-4 text-white p-4">
-              <div class="md:text-2xl text-xs">
+            <div class="flex flex-col md:space-y-10 justify-center relative items-center mt-4 text-white p-4 md:px-[3rem] text-center">
+              <div class="md:text-2xl">
                 In our second edition of the Guide to Trust & Safety, we tackle the
                 complex challenge of measuring the trust and safety of your online
                 platform. From ensuring visibility to ensuring policy enforcement,
                 we make it simple to implement valuable metrics.
               </div>
-              <div class="md:text-lg text-xs">
+              <div class="md:text-base italic">
                 In the first part of our Guide to Trust & Safety, we share the four
                 functions needed to build a trust and safety team. However, building
                 a team isn’t enough. Trust & Safety must be managed, and a key
@@ -121,11 +171,11 @@
             </div>
           </div>
         </section>
-        <hr />
-        <section id="section3">
+<hr />
+        <section id="section3" class="pt-[80px] !-mt-[60px]">
           <div class="m-auto md:w-full sm:w-[576px]">
             <div
-              class="w-full text-white text-center md:text-5xl p-4 uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
+              class="w-full text-white text-center md:text-[4rem] text-[2rem] font-bold p-2 leading-none uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
               dev team
             </div>
             <div class="grid md:grid-cols-4 grid-cols-2 gap-4 p-8">
@@ -152,10 +202,10 @@
             </div>
           </div>
         </section>
-        <hr />
-        <section id="section4" class="pb-48 px-8">
+<hr />
+        <section id="section4" class="pb-16 px-8">
           <div class="m-auto md:w-full sm:w-[576px]">
-            <div class="flex md:flex-row flex-col md:space-x-4 space-y-10">
+            <div class="flex md:flex-row flex-col md:space-x-4 space-y-10 md:px-14">
               <div class="flex flex-col space-y-6 md:w-2/3 md:items-baseline justify-center items-center">
                 <img src="../assets/logo_only.svg" class="md:w-[70px] w-[40px]" />
                 <div class="text-white text-xl">Managed by Fantasia Foudation</div>
@@ -167,7 +217,7 @@
                   <img src="../assets/social-05.svg" class="w-[40px]" />
                   <img src="../assets/social-06.svg" class="w-[40px]" />
                 </div>
-                <div class="text-white">
+                <div class="text-white md:block hidden">
                   @2022 Fantasia foundation. All rights reserved
                 </div>
               </div>
@@ -184,6 +234,10 @@
                   <div class="md:text-xl">Careers</div>
                   <div class="md:text-xl">Disclaimer</div>
                 </div>
+              </div>
+              <hr>
+              <div class="text-white text-center md:hidden">
+                @2022 Fantasia foundation. All rights reserved
               </div>
             </div>
           </div>
