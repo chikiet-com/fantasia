@@ -1,6 +1,6 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="over">
-    <div class="flex flex-col space-y-3 min-w-[300px] overflow-auto h-full ">
+  <mat-drawer #drawer class="example-sidenav fixed !h-[100vh] !top-[80px] w-full" mode="over">
+    <div class="p-4 flex flex-col space-y-3 min-w-[300px] overflow-auto !h-[500px]">
       <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap" (click)="drawer.close()">Home</a>
       <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold" (click)="drawer.close()">Road
         map</a>
@@ -38,6 +38,7 @@
       </a>
     </div>
   </mat-drawer>
+
   <div class="example-sidenav-content w-full h-full">
     <div class="flex flex-col w-full h-full relative justify-center">
       <div class="w-full h-full">
@@ -113,12 +114,12 @@
               <span class="md:text-4xl text-xl text-blue-400">FANTASIA</span><span class="md:text-5xl text-2xl">NFT</span>
             </div>
             <div class="md:text-5xl text-2xl">WELCOME TO F-WORD</div>
-            <div class="md:text-base md:block hidden">
+            <div class="md:text-base md:block hidden font-default">
               The Fantasia Foundation launches  <br> an incentive program focused on
               accelerating <br> the adoption and growth of its novel Subnets, <br> the
               premiere scaling solution for Web3 dApps.
             </div>
-            <div class="text-xs md:hidden">
+            <div class="text-xs md:hidden font-default">
               The Fantasia Foundation launches an incentive program focused on accelerating the adoption and growth of its novel Subnets, the premiere scaling solution for Web3 dApps.
             </div>
             <div>
@@ -172,7 +173,7 @@
           </div>
         </section>
 <hr class="text-gray-400"/>
-        <section id="section3" class="pt-4 pb-20">
+        <section id="section3" class="pb-20 pt-[80px] !-mt-[60px]">
           <div class="m-auto">
             <div
               class="w-full text-white text-center md:text-5xl text-[2rem] p-2 leading-none uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
@@ -203,7 +204,7 @@
           </div>
         </section>
 <hr />
-        <section id="section4" class="pb-48 px-8 font">
+        <section id="section4" class="md:pb-48 md:px-8 pb-24 px-4 pt-[80px] !-mt-[60px] font">
           <div class="m-auto">
             <div class="flex md:flex-row flex-col md:space-x-4 space-y-10 md:px-14">
               <div class="flex flex-col space-y-6 md:w-2/3 md:items-baseline justify-center items-center">
