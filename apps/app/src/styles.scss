@@ -1,26 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.cdnfonts.com/css/ostrich-sans-2');
-html, body { height: 100%; }
+//@import url('https://fonts.cdnfonts.com/css/ostrich-sans-2');
+// @import url('assets/ostrich_sans_bold/Ostrich_Sans_Bold/stylesheet.css');
+// @import url('assets/ostrich_sans_medium/Ostrich_Sans_Medium/stylesheet.css');
+// @import url('assets/ostrich_sans_black/Ostrich_Sans_Black/stylesheet.css');
+// @import url('assets/ostrich_sans_dashed_medium/Ostrich_Sans_Dashed_Medium/stylesheet.css');
+// @import url('assets/ostrich_sans_light/Ostrich_Sans_Light/stylesheet.css');
+// @import url('assets/ostrichsans-heavy/OstrichSans-Heavy/stylesheet.css');
+// @import url('assets/ostrichsansinline-italic/OstrichSansInline-Italic/stylesheet.css');
+// @import url('assets/ostrichsansinline/OstrichSansInline/stylesheet.css');
+@font-face {
+  font-family: "Ostrich Sans";
+  src: url("../src/assets/font/ostrich-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-body { margin: 0;
+body {
+  margin: 0;
   // font-family: 'Ostrich Sans', sans-serif;
   // font-family: 'Ostrich Sans Inline', sans-serif;
   // font-family: 'Ostrich Sans Dashed', sans-serif;
   // font-family: 'Ostrich Sans Rounded', sans-serif;
-  font-family: 'ostrich-sans-medium', sans-serif;
+  //font-family: 'ostrich-sans-medium', sans-serif;
 
 }
 
 * {
-  font-family: 'ostrich-sans-medium', sans-serif;
+  //font-family: 'ostrich-sans-medium', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // font-family: 'Ostrich Sans', sans-serif;
-  // font-family: 'Ostrich Sans Inline', sans-serif;
-  // font-family: 'Ostrich Sans Dashed', sans-serif;
-  // font-family: 'Ostrich Sans Rounded', sans-serif;
+  font-family: "Ostrich Sans";
+
+  // font-family: "Ostrich Sans Medium" !important;
+ letter-spacing: 5px;
+  // font-family: "OstrichSansInline";
+  // font-family: "OstrichSansInline-Italic";
+  // font-family: "OstrichSans-Heavy";
+  // font-family: "Ostrich Sans Light";
+  // font-family: "Ostrich Sans Black";
+}
+.trustsafespeed p,.font div,.font span
+{
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+  letter-spacing: 2px;
 }

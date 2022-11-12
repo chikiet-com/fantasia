@@ -23,8 +23,7 @@
         ],
         "styles": [
           "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-          "apps/app/src/styles.scss",
-          "apps/app/src/font.scss"
+          "apps/app/src/styles.scss"
         ],
         "scripts": []
       },
@@ -33,13 +32,13 @@
           "budgets": [
             {
               "type": "initial",
-              "maximumWarning": "500kb",
-              "maximumError": "1mb"
+              "maximumWarning": "5mb",
+              "maximumError": "10mb"
             },
             {
               "type": "anyComponentStyle",
-              "maximumWarning": "2kb",
-              "maximumError": "4kb"
+              "maximumWarning": "200kb",
+              "maximumError": "400kb"
             }
           ],
           "fileReplacements": [
