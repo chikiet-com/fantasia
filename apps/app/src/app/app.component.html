@@ -101,13 +101,13 @@
               <a href="#section4"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Dev
                 Team</a>
-              <div>|</div>
+              <!-- <div>|</div>
               <a href="#section5"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Contact</a>
               <div>|</div>
               <a href="#section5"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
-                Paper</a>
+                Paper</a> -->
               <div> |</div>
               <a href="#section5"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
@@ -170,31 +170,32 @@
         </div>
         <div class="relative m-auto mt-[80px] flex flex-row text-white lg:space-x-3 text-2xl w-full">
           <div class="absolute top-0 left-0 w-full h-full">
-
-            <video id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-ngang.jpg" class="lg:block hidden">
-              <source src="../assets/videongang-nen.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
-              <source src="../assets/videongang-nen.mp4" type="video/mp4" type="video/mp4">
+            <div class="relative" style="height: min(100vh, 100vw);">
+            <video class="h-[100vh]" id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-ngang.jpg" class="lg:block hidden">
+              <source src="../assets/videongang_new.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
+              <source src="../assets/videongang_new.mp4" type="video/mp4" type="video/mp4">
             </video>
             <!-- <video playsinline autoplay loop muted poster="../assets/bg-video-ngang.jpg">
               <source srcset="../assets/videodoc-nen.mp4" type="video/mp4" media="(max-width: 577px)">
               <source srcset="../assets/video-ipad-nen.mp4" type="video/mp4" media="(max-width: 768px)">
               <source srcset="../assets/videongang-nen.mp4" type="video/mp4">
             </video> -->
-            <video id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-ipad.jpg" class="md:block lg:hidden hidden">
+            <video class="h-[100vh]" id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-ipad.jpg" class="md:block lg:hidden hidden">
             <source src="../assets/video-ipad-nen.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
             <source src="../assets/video-ipad-nen.mp4" type="video/mp4" type="video/mp4">
           </video>
-          <video id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-doc.jpg" class="lg:hidden md:hidden">
-            <source src="../assets/videodoc-nen.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
-            <source src="../assets/videodoc-nen.mp4" type="video/mp4" type="video/mp4">
+          <video class="h-[100vh]" id="video1" oncanplay="this.play()" onloadedmetadata="this.muted = true" autoplay muted playsinline loop poster="../assets/bg-video-doc.jpg" class="lg:hidden md:hidden">
+            <source src="../assets/videodoc-new.mp4" type="video/mp4" type="video/mp4; codecs=hvc1">
+            <source src="../assets/videodoc-new.mp4" type="video/mp4" type="video/mp4">
           </video>
+        </div>
           </div>
           <div class="absolute flex flex-col mt-4 p-6 lg:px-32 lg:space-y-6 lg:mt-16 w-full h-full z-10">
             <div class="mx-auto w-full lg:max-w-[992px]  sm:max-w-[576px] flex flex-col space-y-4">
               <div class="flex flex-row space-x-3 items-center lg:justify-start justify-center">
                 <img src="../assets/logo_only.svg" class="lg:w-[60px] w-[60px]" />
                 <span class="lg:text-4xl text-xl text-blue-400">FANTASIA</span><span
-                  class="lg:text-5xl text-2xl">NFT</span>
+                  class="lg:text-5xl text-2xl">CHAIN</span>
               </div>
               <div class="lg:text-5xl text-2xl">WELCOME TO F-WORD</div>
               <div class="lg:text-base lg:block hidden font-default">
@@ -212,9 +213,9 @@
               </div>
             </div>
           </div>
-        <img src="../assets/bg-video-ngang.jpg" alt="" class="lg:block md:hidden hidden"/>
+        <img src="../assets/bg-ngang.jpg" alt="" class="lg:block md:hidden hidden"/>
         <img src="../assets/bg-video-ipad.jpg" alt="" class="lg:hidden md:block hidden"/>
-        <img src="../assets/bg-video-doc.jpg" alt="" class="lg:hidden md:hidden"/>
+        <img src="../assets/bg-video-doc.png" alt="" class="lg:hidden md:hidden"/>
         </div>
       </div>
       <div class="space-y-2 bg-gradient-to-b from-[#0B0610] via-[#041A3B] to-[#150815]">
@@ -227,7 +228,7 @@
        <span class="heading-style w-full text-white text-center lg:text-5xl text-[2rem] py-4 leading-none">
               road map
        </span>
-      </div> 
+      </div>
       <div class="lg:max-w-[992px] sm:max-w-[768px] m-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 justify-center items-center">
           <img src="../assets/2018-2019.png" class="h-[300px]" alt="">
           <img src="../assets/2020.png" class="h-[300px]" alt="">
@@ -260,7 +261,7 @@
         <span class="heading-style w-full text-white text-center lg:text-5xl text-[2rem] py-4 leading-none">
           tokenomic
         </span>
-       </div> 
+       </div>
             <img src="../assets/tokenomic/tokenomic/tokenomic-01.png"  class="lg:block md:hidden hidden m-auto"/>
             <img src="../assets/tokenomic/tokenomic/tokenomic-02.png"   class="lg:hidden md:block hidden m-auto"/>
             <img src="../assets/tokenomic/tokenomic/tokenomic-02.png"    class="lg:hidden md:hidden m-auto"/>
@@ -282,6 +283,11 @@
               <p>- Low trading fee: Fast transaction speed allow PoA to offer lower transaction fee than other algorithms</p>
               <p>- Calculation efforts and specialized equipment are not required: PoA is better energy saving solution for maintenance and operation than other algorithms</p>
               <p> - High-security:  Participants of every transaction must go through identity and credibility verification process. Therefore, PoA algorithm can totally eliminate cyber attacks.</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
             </div>
           </div>
         </section>
@@ -338,20 +344,20 @@
                   @2022 Fantasia foundation. All rights reserved
                 </div>
               </div>
-              <!-- <div class="lg:w-1/3 text-white">
+              <div class="lg:w-1/3 text-white">
                 <div class="grid grid-cols-2 lg:gap-8 gap-4">
-                  <div class="lg:text-lg font-bold">FANTASIA</div>
-                  <div class="lg:text-lg font-bold">GET CONNECTED</div>
-                  <div class="text-gray-400">Grants</div>
+                  <div class="lg:text-lg font-bold font-quicksand"><a href="#">Contact</a> </div>
+                  <div class="lg:text-lg font-bold font-quicksand"><a href="#">White Paper</a></div>
+                  <!-- <div class="text-gray-400">Grants</div>
                   <div class="text-gray-400">Ecosystem</div>
                   <div class="text-gray-400">Break Solana</div>
                   <div class="text-gray-400">Blog</div>
                   <div class="text-gray-400">Media Kit</div>
                   <div class="text-gray-400">Newsleter</div>
                   <div class="text-gray-400">Careers</div>
-                  <div class="text-gray-400">Disclaimer</div>
+                  <div class="text-gray-400">Disclaimer</div> -->
                 </div>
-              </div> -->
+              </div>
               <hr>
               <div class="text-gray-400 text-center lg:hidden">
                 @2022 Fantasia foundation. All rights reserved
