@@ -1,26 +1,28 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav fixed !h-[100vh] !top-[80px] w-full" mode="over">
-    <div class="p-4 flex flex-col space-y-3 min-w-[300px] overflow-auto">
+    <div class="p-4 flex flex-col space-y-3 min-w-[300px] overflow-auto font-quicksand">
       <a href="#" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap"
         (click)="drawer.close()">Home</a>
       <a href="#section1" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">Road
         map</a>
       <a href="#section2" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
+        (click)="drawer.close()">Tokenomic</a>
+      <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">About
         Us</a>
-      <a href="#section3" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
+      <a href="#section4" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">Dev
         Team</a>
-      <a href="#section4" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
-        (click)="drawer.close()">Contact</a>
       <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
+        (click)="drawer.close()">Contact</a>
+      <a href="#section6" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">White
         Paper</a>
       <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">
         <div class="flex flex-row space-x-4">
-          <span> Add To MetaMask</span>
+          <a> Add To MetaMask</a>
           <div class="w-[30px]">
             <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1"
               viewBox="0 0 318.6 318.6">
@@ -81,7 +83,7 @@
             class="m-auto h-[80px] lg:max-w-[992px]  sm:max-w-[576px] lg:pt-2 items-center uppercase flex flex-row text-white space-x-3 lg:justify-center justify-between text-2xl w-full cursor-pointer">
             <div class="lg:hidden"></div>
             <img src="../assets/logo_head.svg" class="lg:w-[200px] h-[50px] text-center" alt="" />
-            <div class="hidden lg:flex flex-row space-x-3 items-center">
+            <div class="hidden lg:flex flex-row space-x-1 items-center font-quicksand">
               <a href="#"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Home</a>
               <div>|</div>
@@ -90,14 +92,17 @@
                 map</a>
               <div>|</div>
               <a href="#section2"
+                class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Tokenomic</a>
+              <div>|</div>
+              <a href="#section3"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">About
                 Us</a>
               <div>|</div>
-              <a href="#section3"
+              <a href="#section4"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Dev
                 Team</a>
               <div>|</div>
-              <a href="#section4"
+              <a href="#section5"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">Contact</a>
               <div>|</div>
               <a href="#section5"
@@ -193,8 +198,8 @@
               </div>
               <div class="lg:text-5xl text-2xl">WELCOME TO F-WORD</div>
               <div class="lg:text-base lg:block hidden font-default">
-                The Fantasia Foundation launches <br> an incentive program focused on
-                accelerating <br> the adoption and growth of its novel Subnets, <br> the
+                The Fantasia Foundation launches an incentive program focused on
+                accelerating the adoption and growth of its novel Subnets,the
                 premiere scaling solution for Web3 dApps.
               </div>
               <div class="text-xs lg:hidden font-default">
@@ -212,40 +217,58 @@
         <img src="../assets/bg-video-doc.jpg" alt="" class="lg:hidden md:hidden"/>
         </div>
       </div>
-      <div class="space-y-2 bg-gradient-to-b from-[#011620] via-[#041A3B] to-[#150815]">
-        <section id="section1">
-          <div class="relative">
+      <div class="space-y-2 bg-gradient-to-b from-[#0B0610] via-[#041A3B] to-[#150815]">
+        <section id="section1" class="pt-[80px] !-mt-[60px]">
+          <div class="flex flex-col items-center justify-center">
             <!-- <div class="lg:max-w-[992px] sm:max-w-[576px] absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 heading-style w-full text-white text-center lg:text-5xl text-[2rem] p-2 leading-none">
               road map
             </div> -->
-     <div class="lg:max-w-[992px] sm:max-w-[576px] absolute lg:top-20 md:top-14 top-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-white text-center lg:text-5xl text-[2rem] p-2 leading-none">
-       <span class="heading-style">
+     <div class="lg:max-w-[992px] sm:max-w-[576px] mb-8">
+       <span class="heading-style w-full text-white text-center lg:text-5xl text-[2rem] py-4 leading-none">
               road map
        </span>
+      </div> 
+      <div class="lg:max-w-[992px] sm:max-w-[768px] m-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 justify-center items-center">
+          <img src="../assets/2018-2019.png" class="h-[300px]" alt="">
+          <img src="../assets/2020.png" class="h-[300px]" alt="">
+          <img src="../assets/2021.png" class="h-[300px]" alt="">
+          <img src="../assets/2022.png" class="h-[300px]" alt="">
+          <img src="../assets/2023.png" class="h-[300px]" alt="">
+          <img src="../assets/2024.png" class="h-[300px]" alt="">
       </div>
-      <img src="../assets/roadmap/roadmap-01.png"  class="lg:block md:hidden hidden m-auto"/>
+      <div class="text-white text-center text-xl py-8 font">
+        <span class="font-bold">2023-2025:</span><span>Developing ecosystems fantasia metaverse</span>
+        <br />
+        <span>(Blockchain with normal games and developing new games)</span>
+      </div>
+      <!-- <img src="../assets/roadmap/roadmap-01.png"  class="lg:block md:hidden hidden m-auto"/>
       <img src="../assets/roadmap/roadmap-02.png"   class="lg:hidden md:block hidden m-auto"/>
-      <img src="../assets/roadmap/roadmap-03.png"    class="lg:hidden md:hidden m-auto"/>
+      <img src="../assets/roadmap/roadmap-03.png"    class="lg:hidden md:hidden m-auto"/> -->
           </div>
         </section>
-        <section id="section1">
-          <div class="relative">
+        <section id="section2" class="pt-[80px] !-mt-[60px]">
+          <div class="flex flex-col items-center justify-center">
             <!-- <div class="lg:max-w-[992px] sm:max-w-[576px] absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 heading-style w-full text-white text-center lg:text-5xl text-[2rem] p-2 leading-none">
               road map
             </div> -->
-     <div class="lg:max-w-[992px] sm:max-w-[576px] absolute lg:top-20 md:top-14 top-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-white text-center lg:text-5xl text-[2rem] p-2 leading-none">
-       <span class="heading-style">
+     <!-- <div class="lg:max-w-[992px] sm:max-w-[576px] absolute lg:top-20 md:top-14 top-6 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+       <span class="heading-style  w-full text-white text-center lg:text-5xl text-[2rem] py-4 leading-none">
               tokenomic
        </span>
-      </div>
+      </div> -->
+      <div class="lg:max-w-[992px] sm:max-w-[576px] mb-8">
+        <span class="heading-style w-full text-white text-center lg:text-5xl text-[2rem] py-4 leading-none">
+          tokenomic
+        </span>
+       </div> 
             <img src="../assets/tokenomic/tokenomic/tokenomic-01.png"  class="lg:block md:hidden hidden m-auto"/>
             <img src="../assets/tokenomic/tokenomic/tokenomic-02.png"   class="lg:hidden md:block hidden m-auto"/>
-            <img src="../assets/tokenomic/tokenomic/tokenomic-03.png"    class="lg:hidden md:hidden m-auto"/>
+            <img src="../assets/tokenomic/tokenomic/tokenomic-02.png"    class="lg:hidden md:hidden m-auto"/>
           </div>
         </section>
 
         <!-- <hr /> -->
-        <section id="section2" class="pt-[80px] !-mt-[60px]">
+        <section id="section3" class="pt-[80px] !-mt-[60px]">
           <div class="m-auto text-center lg:max-w-[992px] sm:max-w-[576px]">
             <!-- <div
               class="w-full text-white text-center lg:text-5xl text-[2rem]  p-2 leading-none bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
@@ -263,7 +286,7 @@
           </div>
         </section>
         <!-- <hr class="text-gray-400"/> -->
-        <section id="section3" class="pb-20 pt-[80px] !-mt-[60px]">
+        <section id="section4" class="pb-20 pt-[80px] !-mt-[60px]">
           <div class="m-auto text-center">
             <!-- <div
               class="w-full text-white text-center lg:text-5xl text-[2rem] p-2 leading-none uppercase bg-gradient-to-r from-transparent via-[#888f92] to-transparent">
