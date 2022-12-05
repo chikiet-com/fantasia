@@ -14,6 +14,16 @@
     }
   ],
   "compilerOptions": {
+    "paths": {
+      "crypto": ["./node_modules/crypto-browserify"],
+      "stream": ["./node_modules/stream-browserify"],
+      "assert": ["./node_modules/assert"],
+      "http": ["./node_modules/stream-http"],
+      "https": ["./node_modules/https-browserify"],
+      "process": ["./node_modules/process/browser"],
+      "url": ["./node_modules/url"],
+      "os": ["./node_modules/os-browserify"]
+    },
     "target": "es2020",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -23,9 +33,11 @@
     "noFallthroughCasesInSwitch": true
   },
   "angularCompilerOptions": {
+    "types" : ["node"],
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "noImplicitAny": false,
   }
 }

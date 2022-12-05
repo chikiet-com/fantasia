@@ -19,7 +19,7 @@
       <a href="#section6" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">White
         Paper</a>
-      <a href="#section5" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
+      <a href="#section5" (click)="connectAccount()" class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
         (click)="drawer.close()">
         <div class="flex flex-row space-x-4">
           <a> Add To MetaMask</a>
@@ -109,7 +109,7 @@
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold">White
                 Paper</a> -->
               <div> |</div>
-              <a href="#section5"
+              <a href="#section5" (click)="connectAccount()"
                 class="hover:bg-slate-100 hover:text-blue-300 p-3 rounded-lg whitespace-nowrap font-bold"
                 matTooltip="Add To MetaMask">
                 <div class="w-[30px]">
